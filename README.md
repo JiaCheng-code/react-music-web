@@ -55,3 +55,6 @@ react-music-web
 - 样式重置:normalize.css
 - 别名:@craco/craco
 - 生成文件夹目录结构:tree-node-cli
+- 样式编写:styled-components
+- ui库:antd
+- 图标库:@antdesign/icons
