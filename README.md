@@ -59,3 +59,5 @@ react-music-web
 - ui库:antd
 - 图标库:@antdesign/icons
 - 网络请求：axios
+- 状态管理:redux react-redux
+- 状态管理异步请求:Redux-thunk
