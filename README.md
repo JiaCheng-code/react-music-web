@@ -58,3 +58,4 @@ react-music-web
 - 样式编写:styled-components
 - ui库:antd
 - 图标库:@antdesign/icons
+- 网络请求：axios
