@@ -44,7 +44,7 @@ const WYAppHeader = memo(() => {
             prefix={<SearchOutlined />}
           />
           <button className="center">创作者中心</button>
-          <button>登录</button>
+          <div>登录</div>
         </HeaderRight>
       </div>
       <div className="divider"></div>

@@ -92,5 +92,6 @@ export const HeaderRight = styled.div`
     border-radius: 16px;
     margin: 0 16px;
     background-color: transparent;
+    color: #ccc;
   }
 `;
