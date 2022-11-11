@@ -1,25 +1,3 @@
-### 目录结构
-react-music-web
-├── public
-│   ├── favicon.ico
-│   └── index.html
-├── src
-│   ├── App.js
-│   ├── assets
-│   ├── common
-│   ├── components
-│   ├── index.js
-│   ├── pages
-│   ├── router
-│   ├── services
-│   ├── store
-│   └── utils
-├── README.md
-├── package-lock.json
-├── package.json
-└── yarn.lock
-
-
 ### 项目规范
 
 > 项目规范：项目中有一些开发规范和代码风格
@@ -61,3 +39,4 @@ react-music-web
 - 网络请求：axios
 - 状态管理:redux react-redux
 - 状态管理异步请求:Redux-thunk
+- 解决数据可变性引起的性能问题:ImmutableJS

@@ -6,7 +6,6 @@ import { discoverMenu } from "@/common/local-data";
 import { DiscoverWrapper, TopMenu } from "./style";
 
 export default function WYDiscover(props) {
-  console.log(props);
   return (
     <DiscoverWrapper>
       <div className="top">

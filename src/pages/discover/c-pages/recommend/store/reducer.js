@@ -4,9 +4,10 @@ const defaultState = {
 };
 
 function reducer(state = defaultState, action) {
-  switch (action.TYPE) {
+  switch (action.type) {
     case CHANGE_TOP_BANNERS:
-      return { ...state, topBanners: [] };
+      return { ...state, topBanners: action.topBanners };
+      break;
     default:
       return state;
   }
