@@ -40,3 +40,4 @@
 - 状态管理:redux react-redux
 - 状态管理异步请求:Redux-thunk
 - 解决数据可变性引起的性能问题:ImmutableJS
+- redux结合Immutable:redux-immutable

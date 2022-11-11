@@ -6,7 +6,7 @@ import {getTopBannerAction} from "./store/actionCreators";
  const WYRecommend = memo((props)=> {
      // react-thunk请求 hook shallowEqual浅层比较
      const {topBanners} = useSelector(state=>({
-         topBanners:state.recommend.topBanners
+         topBanners:state.getIn(["recommend","topBanners"])
      }),shallowEqual)
      console.log(topBanners)
      const dispatch = useDispatch();
