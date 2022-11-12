@@ -1,19 +1,13 @@
-import React, {memo, useEffect} from "react";
-import {shallowEqual, useDispatch, useSelector} from "react-redux";
+import React, { memo } from "react";
+import WYTopBanners from "./c-cpns/top-banners";
 
-import {getTopBannerAction} from "./store/actionCreators";
-
- const WYRecommend = memo((props)=> {
-     // react-thunk请求 hook shallowEqual浅层比较
-     const {topBanners} = useSelector(state=>({
-         topBanners:state.getIn(["recommend","topBanners"])
-     }),shallowEqual)
-     console.log(topBanners)
-     const dispatch = useDispatch();
-     useEffect(() => {
-         dispatch(getTopBannerAction())
-     }, [dispatch])
-     return <div>WYRecommend:{topBanners.length}</div>;
- });
+import { RecommendWrapper } from "./style";
+const WYRecommend = memo((props) => {
+  return (
+    <RecommendWrapper>
+      <WYTopBanners />
+    </RecommendWrapper>
+  );
+});
 
 export default WYRecommend;
