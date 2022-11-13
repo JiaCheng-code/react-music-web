@@ -1,17 +1,20 @@
-import {Map} from "immutable";
-import {CHANGE_TOP_BANNERS} from "./constants";
+import { Map } from "immutable";
+import { CHANGE_HOT_RECOMMEND, CHANGE_TOP_BANNERS } from "./constants";
 
 const defaultState = Map({
-    topBanners: [],
+  topBanners: [],
+  hotRecommends: [],
 });
 
 function reducer(state = defaultState, action) {
-    switch (action.type) {
-        case CHANGE_TOP_BANNERS:
-            return state.set("topBanners", action.topBanners);
-        default:
-            return state;
-    }
+  switch (action.type) {
+    case CHANGE_TOP_BANNERS:
+      return state.set("topBanners", action.topBanners);
+    case CHANGE_HOT_RECOMMEND:
+      return state.set("hotRecommends", action.hotRecommends);
+    default:
+      return state;
+  }
 }
 
 export default reducer;

@@ -1,8 +1,9 @@
 import React, { memo } from "react";
+import PropsTypes from "prop-types";
 import { HeaderWrapper } from "./style";
 
 const WYThemeHeaderRCM = memo((props) => {
-  const { title, keywords } = props;
+  const { title, keywords = [] } = props;
   return (
     <HeaderWrapper className="sprite_02">
       <div className="left">
@@ -25,5 +26,11 @@ const WYThemeHeaderRCM = memo((props) => {
     </HeaderWrapper>
   );
 });
-
+WYThemeHeaderRCM.prototype = {
+  title: PropsTypes.string.isRequired,
+  keywords: PropsTypes.array,
+};
+WYThemeHeaderRCM.defaultProps = {
+  keywords: [],
+};
 export default WYThemeHeaderRCM;
