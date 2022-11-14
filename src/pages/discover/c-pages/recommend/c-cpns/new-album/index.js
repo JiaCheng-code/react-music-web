@@ -5,6 +5,7 @@ import { getNewAlbumAction } from "../../store/actionCreators";
 
 import { Carousel } from "antd";
 import WYThemeHeaderRCM from "@/components/theme-header-rcm";
+import WYAlbumCover from "@/components/album-cover";
 import {
   NEW_ALBUM_LIMIT,
   NEW_ALBUM_PEG_PAGE,
@@ -44,7 +45,15 @@ const WYNewAlbum = memo(() => {
                       (item + 1) * NEW_ALBUM_PEG_PAGE
                     )
                     .map((iten) => {
-                      return <div key={iten.id}>{iten.name}</div>;
+                      return (
+                        <WYAlbumCover
+                          key={iten.id}
+                          info={iten}
+                          size={100}
+                          width={118}
+                          bgp={"-570px"}
+                        ></WYAlbumCover>
+                      );
                     })}
                 </div>
               );
