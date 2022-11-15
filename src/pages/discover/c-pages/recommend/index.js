@@ -17,7 +17,7 @@ const WYRecommend = memo((props) => {
         <RecommendLeft>
           <WYHotRecommend></WYHotRecommend>
           <WYNewAlbum></WYNewAlbum>
-          <WYRecommendRanking></WYRecommendRanking>
+          {/* <WYRecommendRanking></WYRecommendRanking> */}
         </RecommendLeft>
         <RecommendRight></RecommendRight>
       </Content>

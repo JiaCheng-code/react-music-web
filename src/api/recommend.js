@@ -24,3 +24,10 @@ export function getNewAlbum(limit) {
     },
   });
 }
+// 飙升榜
+export function getTopList(data) {
+  return request({
+    url: "/playlist/track/all",
+    params: data,
+  });
+}
