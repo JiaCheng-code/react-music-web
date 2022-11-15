@@ -10,6 +10,7 @@ import store from "./store";
 
 import WYAppFooter from "@/components/app-footer";
 import WYAppHeader from "@/components/app-header";
+import WYPlayerBar from "./pages/player/app-player-bar";
 
 const App = memo(() => {
   return (
@@ -19,6 +20,7 @@ const App = memo(() => {
         <WYAppHeader />
         {renderRoutes(routes)}
         <WYAppFooter />
+        <WYPlayerBar></WYPlayerBar>
       </HashRouter>
     </Provider>
   );

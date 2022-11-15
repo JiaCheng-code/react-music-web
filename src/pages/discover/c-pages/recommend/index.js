@@ -3,6 +3,9 @@ import WYHotRecommend from "./c-cpns/hot-recommend";
 import WYTopBanners from "./c-cpns/top-banners";
 import WYNewAlbum from "./c-cpns/new-album";
 import WYRecommendRanking from "./c-cpns/recommend-ranking";
+import WYUserLogin from "./c-cpns/user-login";
+import WYSettleSinger from "./c-cpns/settle-singer";
+import WYHotAnchor from "./c-cpns/hot-anchor";
 import {
   RecommendWrapper,
   Content,
@@ -19,7 +22,11 @@ const WYRecommend = memo((props) => {
           <WYNewAlbum></WYNewAlbum>
           {/* <WYRecommendRanking></WYRecommendRanking> */}
         </RecommendLeft>
-        <RecommendRight></RecommendRight>
+        <RecommendRight>
+          <WYUserLogin></WYUserLogin>
+          <WYSettleSinger></WYSettleSinger>
+          <WYHotAnchor></WYHotAnchor>
+        </RecommendRight>
       </Content>
     </RecommendWrapper>
   );
