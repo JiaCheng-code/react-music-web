@@ -1,9 +1,15 @@
 import { Slider } from "antd";
-import React, { memo } from "react";
+import React, { memo, useEffect } from "react";
+import { getSongDetail } from "@/api/player";
 
 import { Control, Operator, PlaybarWrapper, PlayInfo } from "./style";
 
 const WYPlayerBar = memo(() => {
+  useEffect(() => {
+    getSongDetail(167876).then((res) => {
+      console.log(res);
+    });
+  }, []);
   return (
     <PlaybarWrapper className="sprite_player">
       <div className="content wrap-v2">
