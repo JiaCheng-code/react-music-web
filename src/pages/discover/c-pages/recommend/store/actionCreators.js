@@ -30,7 +30,7 @@ const changeNewRankingAction = (res) => ({
 });
 const changeOrignRankingAction = (res) => ({
   type: CHANGE_ORIGIN_RANKING,
-  topLists: res.playlist,
+  orignRanking: res.playlist,
 });
 export const getTopBannerAction = () => {
   return (dispath) => {
